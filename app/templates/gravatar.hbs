@@ -11,18 +11,14 @@
         Pixelfy me!
       </button>
       <p class="gravatar-preview"><strong>Preview:</strong></p>
-      ! Implement the preview image here !
-      <!-- We want an img tag here with the src attr bound to gravatarUrl -->
+      <img class="gravatar-preview-image" {{bind-attr src=gravatarUrl}}>
     </form>
   </div>
 
   <div class="col-md-8">
     <div class="row pixelizer-controls">
       <div class="col-md-9 slider-controls">
-        ! Implement the slider component here !
-
-        <!-- Include the x-slider, bind value to pixelatePercentage -->
-
+        {{x-slider value=pixelatePercentage}}
       </div>
       <div class="col-md-3">
         <button class="btn btn-default pull-right" {{action "downloadImage"}}>
@@ -33,10 +29,7 @@
 
     <div class="row">
       <div class="col-md-12">
-        ! Implement the pixelate-image component here !
-
-        <!-- Include the pixelate-image, bind src to base64Url and value to pixelatePercentage -->
-
+        {{pixelate-image src=base64Url value=pixelatePercentage}}
       </div>
     </div>
   </div>
