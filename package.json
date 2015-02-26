@@ -31,6 +31,7 @@
     "ember-cli-pixelate-image": "git://github.com/cowboyd/ember-cli-pixelate-image",
     "ember-cli-qunit": "0.3.8",
     "ember-cli-sample-image-data": "git://github.com/cowboyd/ember-cli-sample-image-data",
+    "ember-cli-sass": "3.1.0",
     "ember-cli-uglify": "1.0.1",
     "ember-data": "1.0.0-beta.15",
     "ember-export-application-global": "^1.0.2",
