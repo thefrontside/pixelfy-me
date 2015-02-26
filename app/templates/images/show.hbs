@@ -1,7 +1,6 @@
 <div class="row pixelizer-controls">
   <div class="col-md-9 slider-controls">
-    <!-- Insert the x-slider component and bind value to pixelatePercentage -->
-    ! Implement slider here !
+    {{x-slider value=pixelatePercentage}}
   </div>
 
   <div class="col-md-3">
@@ -13,7 +12,6 @@
 
 <div class="row">
   <div class="col-md-12">
-    <!-- Insert the pixelate-image component, bind src to model.url, bind value to pixelatePercentage -->
-    ! Implement pixelate-image here !
+    {{pixelate-image src=model.url value=pixelatePercentage}}
   </div>
 </div>
