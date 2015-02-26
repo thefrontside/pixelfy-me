@@ -5,10 +5,9 @@
     <ul class="image-gallery">
       {{#each image in model}}
         <li>
-          <!-- Link these to their show route once it exists -->
-          {{!#link-to "images.show" image}}
+          {{#link-to "images.show" image}}
             <img class="gallery-image spec-gallery-image" {{bind-attr src="image.url"}}>
-          {{!/link-to}}
+          {{/link-to}}
         </li>
       {{/each}}
     </ul>
