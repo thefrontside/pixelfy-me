@@ -9,6 +9,7 @@ Router.map(function() {
   this.resource('images', function() {
     this.route('show', {path: "/:id"});
   });
+  this.route('gravatar');
 });
 
 export default Router;

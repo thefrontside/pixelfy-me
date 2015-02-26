@@ -19,12 +19,11 @@
           {{/link-to}}
         {{/link-to}}
 
-        <!-- Uncomment this stuff when we have a Gravatar route -->
-        {{!#link-to "gravatar" tagName="li"}}
-          {{!#link-to "gravatar"}}
-            <!-- Gravatar -->
-          {{!/link-to}}
-        {{!/link-to}}
+        {{#link-to "gravatar" tagName="li"}}
+          {{#link-to "gravatar"}}
+            Gravatar
+          {{/link-to}}
+        {{/link-to}}
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
