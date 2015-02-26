@@ -1,3 +1,40 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      {{#link-to "images" class="navbar-brand"}}
+        PixelfyMe
+      {{/link-to}}
 
-{{outlet}}
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        {{#link-to "images" tagName="li"}}
+          {{#link-to "images"}}
+            Images
+          {{/link-to}}
+        {{/link-to}}
+
+        <!-- Uncomment this stuff when we have a Gravatar route -->
+        {{!#link-to "gravatar" tagName="li"}}
+          {{!#link-to "gravatar"}}
+            <!-- Gravatar -->
+          {{!/link-to}}
+        {{!/link-to}}
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a>EGA 4 LYFE</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="container page-wrapper">
+  {{outlet}}
+</div>

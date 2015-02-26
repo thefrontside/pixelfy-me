@@ -1,0 +1,19 @@
+<h2>Select an image</h2>
+
+<div class="row">
+  <div class="col-md-4 col-sm-3 col-xs-12">
+    <ul class="image-gallery">
+      {{#each image in model}}
+        <li>
+          <!-- Link these to their show route once it exists -->
+          {{!#link-to "images.show" image}}
+            <img class="gallery-image spec-gallery-image" {{bind-attr src="image.url"}}>
+          {{!/link-to}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+  <div class="col-md-8 col-sm-9 col-xs-12">
+    {{outlet}}
+  </div>
+</div>

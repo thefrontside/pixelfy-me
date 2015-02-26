@@ -1,0 +1,43 @@
+<h2>My Gravatar</h2>
+
+<div class="row">
+  <div class="col-md-4">
+    <form>
+      <div class="form-group">
+        <label for="gravatarEmail">Email address</label>
+        {{input type="email" value=gravatarEmail class="form-control" id="gravatarEmail" placeholder="Your Gravatar email"}}
+      </div>
+      <button {{action "pixelfyImage"}} class="btn btn-primary">
+        Pixelfy me!
+      </button>
+      <p class="gravatar-preview"><strong>Preview:</strong></p>
+      ! Implement the preview image here !
+      <!-- We want an img tag here with the src attr bound to gravatarUrl -->
+    </form>
+  </div>
+
+  <div class="col-md-8">
+    <div class="row pixelizer-controls">
+      <div class="col-md-9 slider-controls">
+        ! Implement the slider component here !
+
+        <!-- Include the x-slider, bind value to pixelatePercentage -->
+
+      </div>
+      <div class="col-md-3">
+        <button class="btn btn-default pull-right" {{action "downloadImage"}}>
+          Download me!
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        ! Implement the pixelate-image component here !
+
+        <!-- Include the pixelate-image, bind src to base64Url and value to pixelatePercentage -->
+
+      </div>
+    </div>
+  </div>
+</div>
