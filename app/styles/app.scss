@@ -1,0 +1,43 @@
+@import 'bootstrap_imports';
+@import 'bootswatch';
+
+.pixelate-container canvas {
+  display: none;
+}
+
+.page-wrapper {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.image-gallery {
+  padding-left: 0;
+  li {
+    list-style-type: none;
+    list-style-position: inside;
+  }
+}
+img.gallery-image {
+  width: 146px;
+  height: 146px;
+  float: left;
+}
+
+img.pixelated-image {
+  width: 100%;
+}
+
+img.gravatar-preview-image {
+  width: 100%;
+}
+
+.gravatar-preview {
+  margin-top: 10px;
+}
+
+.pixelizer-controls {
+  margin-bottom: 20px;
+  .slider-controls {
+    margin-top: 15px;
+  }
+}
